@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropertyHub - Find Your Dream Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PropertyHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#featured-properties">Properties</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                    <li><a href="register.html" class="btn">Register</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Dream Property</h1>
+                <p>Discover the perfect home with PropertyHub's extensive listings</p>
+                <a href="#search-section" class="btn btn-large">
+                    <i class="fas fa-search"></i>
+                    Start Your Search
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-section" class="search-section">
+        <div class="search-container">
+            <form id="searchForm" class="search-form">
+                <div class="form-group">
+                    <label for="searchLocation">Location</label>
+                    <input type="text" id="searchLocation" placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                    <label for="searchType">Property Type</label>
+                    <select id="searchType">
+                        <option value="">All Types</option>
+                        <option value="House">House</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Condo">Condo</option>
+                        <option value="Villa">Villa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="searchPrice">Max Price</label>
+                    <input type="number" id="searchPrice" placeholder="Maximum price">
+                </div>
+                <div class="form-group">
+                    <label for="searchBedrooms">Bedrooms</label>
+                    <select id="searchBedrooms">
+                        <option value="">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">
+                    <i class="fas fa-search"></i>
+                    Search Properties
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section id="featured-properties" class="featured-properties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Properties</h2>
+                <p>Explore our handpicked selection of premium properties</p>
+            </div>
+            <div class="property-grid" id="property-container">
+                <!-- Property cards will be loaded dynamically from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Your trusted partner in real estate</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VICE2mvwsEr8S5xwpk5sCmyfyCQ8jRpTnA&s" alt="About PropertyHub">
+                </div>
+                <div class="about-text">
+                    <h3>Welcome to PropertyHub</h3>
+                    <p>PropertyHub is a premier real estate platform connecting buyers, sellers, and renters with their perfect properties. With years of industry experience, our team of real estate professionals is dedicated to providing exceptional service and guidance throughout your property journey.</p>
+                    <p>We pride ourselves on our extensive knowledge of local markets, commitment to client satisfaction, and innovative approach to real estate solutions. Whether you're looking to buy your dream home, sell your property for maximum value, or find the perfect rental, PropertyHub is here to help you every step of the way.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>1200+</h3>
+                            <p>Properties Listed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>950+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>Dhanmondi, Dhaka, Bangladesh/p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Number</h3>
+                        <p>+880 1873039930</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Address</h3>
+                        <p>info@propertyhub.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>PropertyHub</h2>
+                    <p>Your trusted partner in finding the perfect property. We connect buyers and sellers to create seamless real estate experiences.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#featured-properties">Properties</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Info</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Property Street, Real Estate City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@propertyhub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PropertyHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
